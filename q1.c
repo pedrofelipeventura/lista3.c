@@ -9,6 +9,7 @@ menor e maior elemento do vetor fornecido.
 
 #define TAM 15
 #define MX 100
+#define INI 20
 float soma = 0;
 
 int main(){
@@ -18,7 +19,7 @@ int main(){
     srand(time(NULL));
 
     for(int k=0; k<TAM; k++){
-        vetorx[k] = ((float) rand()/RAND_MAX) * MX;
+        vetorx[k] = INI + ((float) rand()/RAND_MAX) * MX;
     }
     puts("Vetor ordenado:\n");
     for(int k =0; k<TAM; k++){
